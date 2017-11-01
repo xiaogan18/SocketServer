@@ -1,0 +1,9 @@
+F:\net_test\Nurse\Nurse.Tests\bin\Debug\Nurse.Tests.exe.config
+F:\net_test\Nurse\Nurse.Tests\bin\Debug\Nurse.Tests.exe
+F:\net_test\Nurse\Nurse.Tests\bin\Debug\Nurse.Tests.pdb
+F:\net_test\Nurse\Nurse.Tests\bin\Debug\Nurse.SocketServer.dll
+F:\net_test\Nurse\Nurse.Tests\bin\Debug\Nurse.SocketServer.pdb
+F:\net_test\Nurse\Nurse.Tests\obj\Debug\Nurse.Tests.csprojResolveAssemblyReference.cache
+F:\net_test\Nurse\Nurse.Tests\obj\Debug\Nurse.Tests.csproj.CoreCompileInputs.cache
+F:\net_test\Nurse\Nurse.Tests\obj\Debug\Nurse.Tests.exe
+F:\net_test\Nurse\Nurse.Tests\obj\Debug\Nurse.Tests.pdb
