@@ -12,6 +12,7 @@ namespace Nurse.Tests
 {
     class Program
     {
+        
         static void Main(string[] args)
         {
             var userFiter = new SocketHandshake();
