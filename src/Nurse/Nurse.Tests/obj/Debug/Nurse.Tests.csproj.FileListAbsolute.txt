@@ -7,3 +7,12 @@ F:\net_test\Nurse\Nurse.Tests\obj\Debug\Nurse.Tests.csprojResolveAssemblyReferen
 F:\net_test\Nurse\Nurse.Tests\obj\Debug\Nurse.Tests.csproj.CoreCompileInputs.cache
 F:\net_test\Nurse\Nurse.Tests\obj\Debug\Nurse.Tests.exe
 F:\net_test\Nurse\Nurse.Tests\obj\Debug\Nurse.Tests.pdb
+F:\mygit\SocketServer\src\Nurse\Nurse.Tests\bin\Debug\Nurse.Tests.exe.config
+F:\mygit\SocketServer\src\Nurse\Nurse.Tests\bin\Debug\Nurse.Tests.exe
+F:\mygit\SocketServer\src\Nurse\Nurse.Tests\bin\Debug\Nurse.Tests.pdb
+F:\mygit\SocketServer\src\Nurse\Nurse.Tests\bin\Debug\Nurse.SocketServer.dll
+F:\mygit\SocketServer\src\Nurse\Nurse.Tests\bin\Debug\Nurse.SocketServer.pdb
+F:\mygit\SocketServer\src\Nurse\Nurse.Tests\obj\Debug\Nurse.Tests.csprojResolveAssemblyReference.cache
+F:\mygit\SocketServer\src\Nurse\Nurse.Tests\obj\Debug\Nurse.Tests.csproj.CoreCompileInputs.cache
+F:\mygit\SocketServer\src\Nurse\Nurse.Tests\obj\Debug\Nurse.Tests.exe
+F:\mygit\SocketServer\src\Nurse\Nurse.Tests\obj\Debug\Nurse.Tests.pdb

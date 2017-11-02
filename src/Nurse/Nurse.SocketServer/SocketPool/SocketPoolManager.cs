@@ -23,7 +23,7 @@ namespace Nurse.SocketServer.SocketPool
         /// <summary>
         /// 消息发送队列
         /// </summary>
-        public SocketSenderQueue CurrentSender { get => _currentSender; set => _currentSender = value; }
+        public SocketSenderQueue CurrentSender { get { return _currentSender; } set { _currentSender = value; } }
         /// <summary>
         /// 监听任务
         /// </summary>
@@ -45,19 +45,19 @@ namespace Nurse.SocketServer.SocketPool
         /// <summary>
         /// 连接过滤器
         /// </summary>
-        public ISocketFilter SocketFilter { get => _socketFilter; set => _socketFilter = value; }
+        public ISocketFilter SocketFilter { get { return _socketFilter; } set { _socketFilter = value; } }
 
         private IOfflineContainer _offlineContainer;
         /// <summary>
         /// 离线消息容器
         /// </summary>
-        public IOfflineContainer OfflineContainer { get => _offlineContainer; set => _offlineContainer = value; }
+        public IOfflineContainer OfflineContainer { get { return _offlineContainer; } set { _offlineContainer = value; } }
         
         private Action<string, bool> _notifyComplete;
         /// <summary>
         /// 通知发送完成回调
         /// </summary>
-        public Action<string, bool> NotifyComplete { get => _notifyComplete; set => _notifyComplete = value; }
+        public Action<string, bool> NotifyComplete { get { return _notifyComplete; } set { _notifyComplete = value; } }
 
         #endregion
         private static object _lock = new object();
@@ -194,7 +194,10 @@ namespace Nurse.SocketServer.SocketPool
                     Console.WriteLine("notify failed {0}", arg.ConnectID);
                     break;
             }
-            this.NotifyComplete?.Invoke(arg.ConnectID, notifyResult);
+            if (this.NotifyComplete != null)
+            {
+                this.NotifyComplete(arg.ConnectID, notifyResult);
+            }
         }
         /// <summary>
         /// 用户上线执行
