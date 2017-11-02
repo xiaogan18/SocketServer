@@ -10,7 +10,7 @@ namespace Nurse.SocketServer.SocketPool
     public class SocketPoolMemory : SocketPoolBase
     {
         private ConcurrentDictionary<string, Socket> _pool;
-        protected ConcurrentDictionary<string, Socket> Pool { get => _pool; set => _pool = value; }
+        protected ConcurrentDictionary<string, Socket> Pool { get { return _pool; } set { _pool = value; } }
 
         public SocketPoolMemory():base()
         {

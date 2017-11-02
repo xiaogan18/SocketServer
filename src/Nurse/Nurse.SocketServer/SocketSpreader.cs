@@ -19,10 +19,10 @@ namespace Nurse.SocketServer
         private Task listenTask;
 
         private ISocketFilter handshake;
-        public ISocketFilter Handshake { get => handshake; set => handshake = value; }
+        public ISocketFilter Handshake { get { return handshake; } set { handshake = value; } }
 
         private Action<string> _spreadCallback;
-        public Action<string> SpreadCallback { get => _spreadCallback; set => _spreadCallback = value; }
+        public Action<string> SpreadCallback { get { return _spreadCallback; } set { _spreadCallback = value; } }
 
         public SocketSpreader(Action<string> spreadCallback)
         {

@@ -20,12 +20,12 @@ namespace Nurse.SocketServer.SocketPool
         /// <summary>
         /// 消息失败后重试次数
         /// </summary>
-        public int RetryNumber { get => _retryNumber; set => _retryNumber = value; }
+        public int RetryNumber { get { return _retryNumber; } set { _retryNumber = value; } }
         private int _retryInterval;
         /// <summary>
         /// 重试间隔（毫秒）
         /// </summary>
-        public int RetryInterval { get => _retryInterval; set => _retryInterval = value; }
+        public int RetryInterval { get { return _retryInterval; } set { _retryInterval = value; } }
         
         public SocketSenderQueue(SocketPoolBase pool,int retryNumber=3,int retryInterval=30000)
         {
@@ -196,7 +196,8 @@ namespace Nurse.SocketServer.SocketPool
 
         public void SendComplete(SocketError err)
         {
-            this.OnSendComplete?.Invoke(this, err);
+            if(this.OnSendComplete!=null)
+                this.OnSendComplete(this, err);
         }
         
     }

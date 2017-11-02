@@ -13,7 +13,7 @@ namespace Nurse.SocketServer.OfflineMessage
         private Timer timer;
 
         private int _defaultLiveHour;
-        public int DefaultLiveHour { get => _defaultLiveHour; set => _defaultLiveHour = value; }
+        public int DefaultLiveHour { get { return _defaultLiveHour; } set { _defaultLiveHour = value; } }
 
         public OfflineMsgMemory(int defaultLiveHour = 1,int selfClearInterval=600000)
         {
