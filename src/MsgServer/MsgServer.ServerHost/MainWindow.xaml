@@ -1,0 +1,77 @@
+﻿<Window x:Class="MsgServer.ServerHost.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="消息推送服务端" Height="600" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <GroupBox Header="控制">
+                <StackPanel>
+                <StackPanel Orientation="Horizontal">
+                        <Button Width="60" IsEnabled="{Binding IsStop,Mode=OneWay}" Click="Button_Click">启动</Button>
+                        <Button Width="60" IsEnabled="{Binding IsRun,Mode=OneWay}" Click="Button_Click_1">停止</Button>
+                        <Button Width="60" Click="Button_Click_4">清屏</Button>
+                </StackPanel>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="参数">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock>订阅监听ip：</TextBlock>
+                        <TextBox Width="120" Text="{Binding UserListenIp}"></TextBox>
+                        <TextBlock>端口：</TextBlock>
+                        <TextBox Width="50" Text="{Binding UserListenPort}"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock>心跳间隔：</TextBlock>
+                        <TextBox Width="100" Text="{Binding HeartInterval}"></TextBox>
+                        <TextBlock>(毫秒) 0:不启用</TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock>重试次数：</TextBlock>
+                        <TextBox Width="100" Text="{Binding RetryNumber}"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock>重试间隔：</TextBlock>
+                        <TextBox Width="100" Text="{Binding RetryInterval}"></TextBox>
+                        <TextBlock>(毫秒)</TextBlock>
+                    </StackPanel>
+                    <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                        <TextBlock>广播监听ip：</TextBlock>
+                        <TextBox Width="120" Text="{Binding AdminListenIp}"></TextBox>
+                        <TextBlock>端口：</TextBlock>
+                        <TextBox Width="50" Text="{Binding AdminListenPort}"></TextBox>
+                    </StackPanel>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="测试">
+                <StackPanel>
+                    <TextBlock>消息：</TextBlock>
+                    <TextBox TextWrapping="Wrap" Height="80" Text="{Binding Message}"></TextBox>
+                    <TextBlock>指定用户(多个用户用;隔开，不填表示发全部)：</TextBlock>
+                    <TextBox TextWrapping="Wrap" Height="40" Text="{Binding SendUsers}"></TextBox>
+                    <Button Click="Button_Click_2">发广播</Button>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+        <DockPanel Grid.Column="1" LastChildFill="True">
+            <GroupBox Header="状态" DockPanel.Dock="Top">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock> 状态：</TextBlock>
+                    <TextBlock Text="{Binding StatusStr,Mode=OneWay}"></TextBlock>
+                    <TextBlock Margin="20,0,0,0">在线用户：</TextBlock>
+                    <TextBlock Text="{Binding OnlineCount,Mode=TwoWay}"></TextBlock>
+                    <Button Margin="10,0,0,0" Click="Button_Click_3" Height="23" VerticalAlignment="Bottom">刷新</Button>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="输出">
+                <ScrollViewer>
+                    <TextBox x:Name="txtLog" TextWrapping="Wrap"></TextBox>
+                </ScrollViewer>
+            </GroupBox>
+        </DockPanel>
+    </Grid>
+</Window>

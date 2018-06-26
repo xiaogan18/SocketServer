@@ -1,0 +1,5 @@
+E:\gitcodes\SocketServer\src\Nurse\Nurse.SocketServer\bin\Debug\MsgServer.SocketServer.dll
+E:\gitcodes\SocketServer\src\Nurse\Nurse.SocketServer\bin\Debug\MsgServer.SocketServer.pdb
+E:\gitcodes\SocketServer\src\Nurse\Nurse.SocketServer\obj\Debug\MsgServer.SocketServer.csprojResolveAssemblyReference.cache
+E:\gitcodes\SocketServer\src\Nurse\Nurse.SocketServer\obj\Debug\MsgServer.SocketServer.dll
+E:\gitcodes\SocketServer\src\Nurse\Nurse.SocketServer\obj\Debug\MsgServer.SocketServer.pdb

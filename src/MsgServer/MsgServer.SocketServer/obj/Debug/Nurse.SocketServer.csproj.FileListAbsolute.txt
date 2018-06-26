@@ -1,0 +1,9 @@
+D:\NurseProjects\Nurse\Nurse.SocketServer\bin\Debug\Nurse.SocketServer.dll
+D:\NurseProjects\Nurse\Nurse.SocketServer\bin\Debug\Nurse.SocketServer.pdb
+D:\NurseProjects\Nurse\Nurse.SocketServer\obj\Debug\Nurse.SocketServer.dll
+D:\NurseProjects\Nurse\Nurse.SocketServer\obj\Debug\Nurse.SocketServer.pdb
+E:\workplace\CSharp\Nurse\Nurse.SocketServer\bin\Debug\Nurse.SocketServer.dll
+E:\workplace\CSharp\Nurse\Nurse.SocketServer\bin\Debug\Nurse.SocketServer.pdb
+E:\workplace\CSharp\Nurse\Nurse.SocketServer\obj\Debug\Nurse.SocketServer.dll
+E:\workplace\CSharp\Nurse\Nurse.SocketServer\obj\Debug\Nurse.SocketServer.pdb
+E:\workplace\CSharp\Nurse\Nurse.SocketServer\obj\Debug\Nurse.SocketServer.csprojResolveAssemblyReference.cache
